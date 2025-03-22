@@ -1,0 +1,146 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 25% 98%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 267 100% 50%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 240 10% 97%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 267 100% 97%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 267 100% 50%;
+    --radius: 1rem;
+  }
+
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 267 100% 50%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 267 100% 15%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 267 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-montserrat;
+  }
+}
+
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.instagram-embed {
+  position: relative;
+  padding-bottom: 120%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.instagram-embed:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.instagram-embed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--radius);
+}
+
+.nav-link {
+  @apply relative cursor-pointer font-medium;
+}
+
+.nav-link::after {
+  content: '';
+  @apply absolute left-0 -bottom-1 h-0.5 w-0 bg-primary transition-all duration-300;
+}
+
+.nav-link:hover::after {
+  @apply w-full;
+}
+
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-purple-400;
+}
+
+.hero-pattern {
+  background-image: radial-gradient(circle at 1px 1px, rgba(0, 0, 0, 0.05) 1px, transparent 0);
+  background-size: 40px 40px;
+}
+
+.glass-card {
+  @apply bg-white/80 backdrop-blur-lg border border-white/20 shadow-xl;
+}
+
+.input-style {
+  @apply w-full p-3 rounded-lg border bg-white/50 backdrop-blur-sm focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all duration-300;
+}
+
+.skill-badge {
+  @apply px-4 py-2 rounded-full bg-accent text-primary font-medium transform transition-all duration-300 hover:scale-105 hover:bg-primary hover:text-white;
+}
+
+.section-pattern {
+  background-image: linear-gradient(45deg, var(--tw-gradient-from) 25%, transparent 25%),
+    linear-gradient(-45deg, var(--tw-gradient-from) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, var(--tw-gradient-from) 75%),
+    linear-gradient(-45deg, transparent 75%, var(--tw-gradient-from) 75%);
+  background-size: 20px 20px;
+  background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+}
+
+.contact-link {
+  @apply flex items-center space-x-3 p-4 rounded-lg bg-accent hover:bg-primary hover:text-white transition-all duration-300 transform hover:scale-105;
+}
+
+.section-title {
+  @apply text-4xl md:text-5xl font-bold mb-6 gradient-text;
+}
+
+.section-subtitle {
+  @apply text-lg md:text-xl text-muted-foreground mb-12 max-w-2xl mx-auto text-center;
+}
