@@ -29,11 +29,11 @@ const portfolioReels = [
     description: ""
   },
   {
-    url: "https://www.instagram.com/reel/DHdkGAuNmrG/",
-    description: "Lifestyle Content, 30K Views"
+    url: "https://www.instagram.com/reel/DG5seFwpUwx/",
+    description: ""
   },
   {
-    url: "https://www.instagram.com/reel/DHdNTlxgbI4/",
+    url: "https://www.instagram.com/reel/DHPpcNQKmPk/",
     description: "Product Showcase, 45K Views"
   },
   {
