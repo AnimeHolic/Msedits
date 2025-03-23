@@ -83,6 +83,20 @@ export default function App() {
   const { toast } = useToast();
   const [activeSection, setActiveSection] = useState("hero");
 
+  // Load SociableKIT script dynamically
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://widgets.sociablekit.com/instagram-feed/widget.js";
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+
+    // Cleanup: remove script when component unmounts
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
   useEffect(() => {
     const handleScroll = () => {
       const sections = ["hero", "portfolio", "about", "contact"];
@@ -320,15 +334,7 @@ export default function App() {
                 </div>
               </motion.div>
               <motion.div variants={itemVariants} className="glass-card p-6 rounded-2xl">
-                <a
-                  href="https://www.instagram.com/mangesh_s_oo7/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-center space-x-2 text-primary hover:text-primary/80 transition-colors"
-                >
-                  <Instagram className="h-6 w-6" />
-                  <span className="text-lg font-medium">@mangesh_s_oo7</span>
-                </a>
+                <div className="sk-instagram-feed" data-embed-id="25537983"></div>
               </motion.div>
             </div>
           </motion.div>
