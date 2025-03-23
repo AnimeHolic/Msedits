@@ -26,7 +26,7 @@ const InstagramEmbed = ({ url }) => {
 const portfolioReels = [
   {
     url: "https://www.instagram.com/reel/DGnj6AxvOUp/",
-    description: "Fashion Brand Promo, 50K Views"
+    description: ""
   },
   {
     url: "https://www.instagram.com/reel/DHdkGAuNmrG/",
