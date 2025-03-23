@@ -34,19 +34,19 @@ const portfolioReels = [
   },
   {
     url: "https://www.instagram.com/reel/DHPpcNQKmPk/",
-    description: "Product Showcase, 45K Views"
+    description: ""
   },
   {
-    url: "https://www.instagram.com/reel/DHdkGAuNmrG/",
-    description: "Brand Story, 25K Views"
+    url: "https://www.instagram.com/reel/DHJI8fKqVPO/",
+    description: ""
   },
   {
     url: "https://www.instagram.com/reel/DHdNTlxgbI4/",
-    description: "Travel Content, 35K Views"
+    description: ""
   },
   {
-    url: "https://www.instagram.com/reel/DHdkGAuNmrG/",
-    description: "Food Review, 40K Views"
+    url: "https://www.instagram.com/reel/DGvUaKqvJpz/",
+    description: ""
   }
 ];
 
@@ -321,7 +321,7 @@ export default function App() {
                 </div>
               </motion.div>
               <motion.div variants={itemVariants} className="glass-card p-6 rounded-2xl">
-                <InstagramEmbed url="https://www.instagram.com/reel/DHdNTlxgbI4/" />
+                <InstagramEmbed url="" />
               </motion.div>
             </div>
           </motion.div>
