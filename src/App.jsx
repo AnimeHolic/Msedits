@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu, X, Instagram, Mail, Phone, ChevronDown } from "lucide-react";
@@ -242,7 +241,7 @@ export default function App() {
             className="max-w-2xl mx-auto"
           >
             <div className="glass-card p-6 rounded-2xl">
-              <InstagramEmbed url="https://www.instagram.com/p/DFs2IyCIezg/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" />
+              <InstagramEmbed url="https://www.instagram.com/p/DFs2IyCIezg/" />
             </div>
           </motion.div>
         </div>
