@@ -25,7 +25,7 @@ const InstagramEmbed = ({ url }) => {
 
 const portfolioReels = [
   {
-    url: "https://www.instagram.com/reel/DHdNTlxgbI4/",
+    url: "https://www.instagram.com/reel/DGnj6AxvOUp/?utm_source=ig_web_button_share_sheet&igsh=MzRlODBiNWFlZA==/",
     description: "Fashion Brand Promo, 50K Views"
   },
   {
