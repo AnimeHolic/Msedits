@@ -242,7 +242,7 @@ export default function App() {
             className="max-w-2xl mx-auto"
           >
             <div className="glass-card p-6 rounded-2xl">
-              <InstagramEmbed url="https://www.instagram.com/reel/DHdNTlxgbI4/" />
+              <InstagramEmbed url="https://www.instagram.com/reel/DGnj6AxvOUp/" />
             </div>
           </motion.div>
         </div>
